@@ -1,0 +1,19 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+my diary
+    </title>
+</head>
+<body>
+my diary
+<ul>
+{% for post in post %}
+
+    <a href="{% url 'diary.views.post_detail' post.pk %}"><li>{{post.title}}</li></a>
+{% endfor %}
+</ul>
+</body>
+</html>

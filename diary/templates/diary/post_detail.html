@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<ul>
+
+    <li>{{post.title}}   </li>
+    <li>{{post.content}}</li>
+
+</ul>
+<img src="{{post.photo.url}}">
+{% endblock %}
